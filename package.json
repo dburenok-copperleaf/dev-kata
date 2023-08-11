@@ -1,0 +1,23 @@
+{
+  "name": "dev-kata-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node ./lib/scripts/test.js",
+    "test:decompression": "npm run build && node ./lib/decompress.js",
+    "submit": "npm run build && node ./lib/scripts/submit.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.6",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "lodash": "^4.17.21"
+  }
+}
